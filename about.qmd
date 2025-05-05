@@ -2,8 +2,8 @@
 title: "About"
 ---
 
-About this site
+Hi! My name is Maya Garcia, and I am a senior at Mount Holyoke College. I am a double major in Computer Science and Statistics and I am very excited to graduate with those degrees soon. I am interested in data analysis and software programming!
 
-```{r}
-1 + 1
-```
+![Mount Holyoke Green Griffins!](greengriffin.jpg)
+
+To contact me, you can connect with me via [Linkedin!](https://www.linkedin.com/in/-mayagarcia)

@@ -8,15 +8,19 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About Me!
       - href: Test.qmd
-        text: Test
+        text: STAT 244-SC
 
 format:
   html:
-    theme: cosmo
     css: styles.css
     toc: true
+    dark: darkly
+    theme: pulse
+    linkcolor: "#FF69B4"
+    #backgroundcolor: "#FFC0CB"
 
 editor: visual
 

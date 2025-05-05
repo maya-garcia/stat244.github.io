@@ -1,1 +1,3 @@
 /* css styles */
+.link { color: #FFC0CB; } /* CSS link color (red) */
+.link:hover { color: #FF69B4; } /* CSS link hover (green) */

@@ -1,5 +1,21 @@
 ---
-title: "Test"
+title: "STAT 244-SC"
 ---
 
-Just adding more!!
+Here I will be talking more about my Final Project in my class, stat-244-sc! I am doing a Final Project in collaboration with Hjordis Aho.
+
+For our final project, we choose HSB2 dataset which is a dataset containing 200 randomly sampled responses from a survey conducted by the National Center of Education Statsistics. The survey titled “High School and Beyond” was conducted on high school seniors.
+
+We will be researching students' standardized writing scores and looking at four predictor variables which are: standardized reading score, socio economic status of student's family, type of school, and type of program they are in.
+
+Here are some data visualization of our predictor variables and how they compare with our response variable.
+
+```{r}
+library(ggplot2)
+hsb2=read.csv("hsb2.csv")
+head(hsb2)
+ggplot(hsb2, aes(x = read,y=write)) + geom_line(col = "lightblue") + labs( y= "Writing Score", x = "Reading Score")+ theme_classic()
+ggplot(hsb2, aes(x = ses,y=write)) + geom_boxplot(fill = "lightblue") + labs( y= "Writing Score", x = "Socioeconomic Status")+ theme_classic()
+ggplot(hsb2, aes(x = schtyp,y= write)) + geom_boxplot(fill = "lightblue") + labs(y = "Writing Score", x = "School Type")+ theme_classic()
+ggplot(hsb2, aes(x = prog,y= write)) + geom_boxplot(fill = "lightblue") + labs(y = "Writing Score", x = "Program Type")+ theme_classic()
+```
